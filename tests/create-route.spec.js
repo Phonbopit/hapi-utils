@@ -16,7 +16,7 @@ it('Should return a function that return an object', () => {
   
   const r = {
     method: 'GET',
-    path: '/api/users/{id},
+    path: '/api/users/{id}',
     handlers: (req, h) => { message: "It's work!" },
     options: {
       auth: false
