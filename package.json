@@ -1,0 +1,25 @@
+{
+	"name": "hapi-utils",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"source": "lib",
+	"scripts": {
+		"build": "microbundle",
+		"dev": "microbundle watch",
+		"test": "jest",
+		"release": "np"
+	},
+	"jest": {
+		"collectCoverage": true,
+		"collectCoverageFrom": [
+			"lib/**/*.js",
+			"!**/node_modules/**"
+		],
+		"coverageDirectory": "coverage"
+	},
+	"devDependencies": {
+		"jest": "23.1.0",
+		"microbundle": "0.4.4",
+		"np": "^3.0.1"
+	}
+}
